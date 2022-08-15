@@ -1,0 +1,17 @@
+// https://code.visualstudio.com/docs/languages/jsconfig
+// if some unexpected underline error happen you can config this file
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["unplugin-vue-define-options"],
+    "lib": ["es2016"]
+  },
+  "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
