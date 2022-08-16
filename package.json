@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite --host --open",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --host --port 4173"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",

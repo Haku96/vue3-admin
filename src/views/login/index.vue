@@ -51,7 +51,11 @@
 
 <script setup>
 import { reactive } from "vue";
+import { useAppStore } from "@/stores";
 import { UserOutlined, LockOutlined } from "@ant-design/icons-vue";
+
+const appStore = useAppStore();
+console.log(appStore, import.meta.env);
 
 const formState = reactive({
   username: "",
