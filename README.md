@@ -5,7 +5,7 @@
 
 ## 🤔Something you should know
 
-1. all my code should be in English include comment
+1. all my code should be in English include comments
 2. before you use `npm run preview` you should make use `npm run build`, cause we can not direct open dist/index.html, we need `npm run preview`
 3. project inspire by [arco-design-pro-vue](https://github1s.com/Haku96/arco-design-pro-vue)
 4. `.editorconfig:` help us make code more readable

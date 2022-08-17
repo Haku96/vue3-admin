@@ -3,12 +3,8 @@ import { createApp } from "vue";
 import router from "./router";
 import pinia from "./stores";
 
-/// some UI libs and utils libs
-import Antd from "ant-design-vue";
-
 /// import style files
 import "./global.less";
-import "ant-design-vue/dist/antd.css";
 
 // comment below line, if you don't need mock
 import "./mock";
@@ -23,7 +19,6 @@ const app = createApp(App);
 
 app.use(router);
 app.use(pinia);
-app.use(Antd);
 
 app.mount("#app");
 

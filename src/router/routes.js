@@ -1,16 +1,22 @@
 const routes = [
   {
     path: "/",
-    redirect: "login",
+    name: "home",
+    // lazy load, so we do not need to import components
+    component: () => import("@/views/home/index.vue"),
   },
   {
-    path: "/login",
-    name: "login",
-    // lazy load, so we do not need to import components
-    component: () => import("@/views/login/index.vue"),
-    meta: {
-      requiresAuth: false,
-    },
+    path: "/dashboard",
+    name: "dashboard",
+  },
+
+  // * this could redirect to home page when you input unregistered
+  // route but this could not redirect when you input a registry route
+  // without a component, this scene will be happen extremely low
+  {
+    path: "/:pathMatch(.*)*",
+    name: "notFound",
+    component: () => import("@/views/home/index.vue"),
   },
 ];
 

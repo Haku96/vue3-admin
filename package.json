@@ -1,6 +1,6 @@
 {
-  "name": "vue3-admin",
-  "version": "0.0.0",
+  "name": "vue3-playground",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite --host --open",
     "build": "vite build",
@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",
-    "ant-design-vue": "^3.2.11",
     "axios": "^0.27.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
